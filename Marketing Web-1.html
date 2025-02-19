@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Smart Roster</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-100 to-gray-300 text-gray-800 font-sans">
+  <nav class="flex justify-between items-center p-6 bg-white shadow-md sticky top-0 z-50">
+    <div class="text-2xl font-bold text-green-600">SmartRoster</div>
+    <ul class="flex space-x-6">
+      <li><a href="#services" class="hover:text-green-500 transition">Services</a></li>
+      <li><a href="#about" class="hover:text-green-500 transition">About</a></li>
+      <li><a href="#contact" class="hover:text-green-500 transition">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="h-screen bg-gradient-to-r from-green-500 to-blue-600 flex flex-col justify-center items-center text-white text-center p-8">
+    <h1 class="text-5xl font-extrabold mb-4">Employee Smart Roster</h1>
+    <p class="text-xl mb-6 max-w-2xl">Optimize your workforce scheduling with intelligent automation and real-time management tools.</p>
+    <button class="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-green-100 transition">Get Started</button>
+  </header>
+
+  <section id="services" class="p-12 bg-white text-center">
+    <h2 class="text-4xl font-bold mb-8 text-green-600">Our Main Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="p-6 bg-gradient-to-br from-green-100 to-white shadow-lg rounded-lg transform hover:scale-105 transition">
+        <h3 class="text-2xl font-semibold mb-4">Smart Scheduling</h3>
+        <p>AI-powered scheduling to manage your workforce effortlessly.</p>
+      </div>
+      <div class="p-6 bg-gradient-to-br from-green-100 to-white shadow-lg rounded-lg transform hover:scale-105 transition">
+        <h3 class="text-2xl font-semibold mb-4">Shift Management</h3>
+        <p>Assign and swap shifts easily with real-time updates.</p>
+      </div>
+      <div class="p-6 bg-gradient-to-br from-green-100 to-white shadow-lg rounded-lg transform hover:scale-105 transition">
+        <h3 class="text-2xl font-semibold mb-4">Performance Insights</h3>
+        <p>Track and analyze employee performance seamlessly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="p-12 bg-gray-50 text-center">
+    <h2 class="text-4xl font-bold mb-6 text-green-600">About Us</h2>
+    <p class="max-w-2xl mx-auto text-lg mb-4">We are committed to delivering smart workforce solutions that enhance productivity, reduce administrative burden, and improve employee satisfaction.</p>
+  </section>
+
+  <section id="contact" class="p-12 bg-white text-center">
+    <h2 class="text-4xl font-bold mb-6 text-green-600">Contact Us</h2>
+    <p class="mb-4">Have questions? Reach out to us and we'll be happy to assist!</p>
+    <button class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition">Contact Now</button>
+  </section>
+
+  <footer class="bg-gray-800 text-white p-4 text-center mt-8">
+    &copy; 2025 Employee Smart Roster. All rights reserved.
+  </footer>
+
+  <script>
+    gsap.from('nav', { duration: 1, y: -50, opacity: 0, ease: 'power2.out' });
+    gsap.from('header h1', { duration: 1.2, scale: 0.8, opacity: 0, ease: 'elastic.out(1, 0.3)' });
+    gsap.from('section', { duration: 1, y: 100, opacity: 0, stagger: 0.2 });
+  </script>
+</body>
+</html>
